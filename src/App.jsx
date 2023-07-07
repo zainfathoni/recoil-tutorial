@@ -1,7 +1,8 @@
 import { RecoilRoot } from "recoil";
 import "./App.css";
-import Counter from "./Counter";
-import DoubleCounter from "./DoubleCounter";
+import { CounterButtons } from "./CounterButtons";
+import { CounterDisplay } from "./CounterDisplay";
+import { DoubleCounterDisplay } from "./DoubleCounterDisplay";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
@@ -19,8 +20,9 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <RecoilRoot>
-          <Counter />
-          <DoubleCounter />
+          <CounterDisplay />
+          <DoubleCounterDisplay />
+          <CounterButtons />
         </RecoilRoot>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
